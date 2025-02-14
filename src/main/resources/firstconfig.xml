@@ -21,7 +21,7 @@
         <property name="dataSource" ref="dataSrc"/>
     </bean>
 
-    <bean class="dao.StudentDaoImp" name="studentDao">
+    <bean class="insertdao.dao.StudentDaoImp" name="studentDao">
 <!--            here the reference(ref) is object of jdbcTemlate Above class-->
         <property name="jdbcTemplate" ref="jdbcTemplate"/>
     </bean>

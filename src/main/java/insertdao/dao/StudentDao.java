@@ -1,6 +1,6 @@
-package dao;
+package insertdao.dao;
 
-import entity.Student;
+import insertdao.entity.Student;
 
 public interface StudentDao
 {

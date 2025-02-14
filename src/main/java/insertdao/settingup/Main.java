@@ -1,7 +1,7 @@
-package settingup;
+package insertdao.settingup;
 
-import dao.StudentDaoImp;
-import entity.Student;
+import insertdao.dao.StudentDaoImp;
+import insertdao.entity.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -18,7 +18,7 @@ public class Main {
 
 
         StudentDaoImp s = c.getBean("studentDao", StudentDaoImp.class);
-        Student s1 = new Student(1001,"Chetan","Uttrakhand");
+        Student s1 = new Student(1002,"Tanu","UP");
         int r = s.insert(s1);
         System.out.println(r+"row affected");
 
